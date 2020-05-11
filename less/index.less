@@ -70,7 +70,7 @@ h1{
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
 @box-color:#D3D3D3;
@@ -135,27 +135,29 @@ header{
 
 .main-container{
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	// border: 2px solid red;
 	align-items: center;
-	width: 50%%;
+	width: 50%;
+	margin: auto;
 	
 	.box-1{
 		margin-left: 3%;
 		
 		h2{
 			font-size: 1.2rem;
+			font-weight: bold;
 		}
 		p{
 			font-size: 1.1rem;
-
+			width: 30%;
 		}
 	}
 	.box-2{		
-		margin-right: 20%;
 		width: 10%;
 		h2{
 			font-size: 1.5rem;
+			font-weight: bold;
 		}
 		ul{
 			border: 1px solid lightgrey;
@@ -165,4 +167,14 @@ header{
 			}
 		}
 	}	
+}
+.work-container{
+
+	table{
+	
+		td, th{
+			border: 1px solid #dddddd;
+			padding:9%;
+			
+	}
 }

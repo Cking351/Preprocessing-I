@@ -226,3 +226,11 @@ header nav a {
   border: 1px solid lightgrey;
   font-size: 1.1rem;
 }
+.work-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.work-container table td,
+.work-container table th {
+  border: 1px solid #dddddd;
+}
