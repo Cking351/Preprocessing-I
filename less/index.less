@@ -74,6 +74,15 @@ html, body {
 }
 
 @box-color:#D3D3D3;
+@border-color: black;
+.key(){
+	display: flex;
+}
+.general-border(){
+	border-bottom: 2px solid @border-color;
+		border-width: thin;
+		margin: 5%;
+}
 
 header{
 	display: flex;
@@ -87,7 +96,7 @@ header{
 }//Closes heaeder
 
 .top-content{
-	display: flex;
+	.key()
 	flex-flow: column nowrap;
 	margin: 5%;
 	padding-right: 3%;
@@ -112,9 +121,7 @@ header{
 	}
 
 	.border-content{
-		border-bottom: 2px solid black;
-		border-width: thin;
-		margin: 5%;
+		.general-border()
 	}//closees border-content
 	.top-text{
 		font-size: 1.2rem;
@@ -134,7 +141,7 @@ header{
 }// closes top-content
 
 .main-container{
-	display: flex;
+	.key()
 	flex-flow: row wrap;
 	// border: 2px solid red;
 	align-items: center;
