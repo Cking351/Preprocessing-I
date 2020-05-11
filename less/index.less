@@ -31,7 +31,17 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-}
+
+	a {
+		text-decoration: none;
+		color: black;
+
+		&:hover{
+			color: paleturquoise;
+		}
+
+	}//Closes Anchor 
+}//Cloeses body
 ol, ul {
 	list-style: none;
 }
@@ -47,6 +57,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+h1{
+	font-weight: bold;
+	h2{
+		font-weight: 600;
+	}
+}
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -57,3 +73,28 @@ html, body {
     height: 100%;
 }
 
+@box-color:#D3D3D3;
+
+header{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	nav{	
+		a{
+			padding-right: 1rem;
+		}//Closes anchor
+	}//Closes nav
+}//Closes heaeder
+
+.top-content{
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 5%;
+	margin-left: 28%;
+	width: 50%;
+	height: 100%;
+	background-color: @box-color;
+	.top-image{
+		margin-left: 5%;
+	}
+}
