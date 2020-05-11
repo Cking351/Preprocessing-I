@@ -97,22 +97,64 @@ header{
 	background-color: @box-color;
 	.top-image{
 		margin-left: 5%;
-	}
+		margin-top: 5%;
+	}//Closes top-image
 	.head-text{
 		padding-left: 3%;
 		h1{
 			font-size: 2rem;
-		}
+		}//Closes h1
 		h2{
 			font-size: 1.5rem;
 			// border-bottom: 2px solid black;
 			// border-width: thin;
-		}
+		}//Closes h2
 	}
 
 	.border-content{
 		border-bottom: 2px solid black;
 		border-width: thin;
 		margin: 5%;
-	}
+	}//closees border-content
+	.top-text{
+		font-size: 1.2rem;
+	}//closes top text
+	button{
+		background-color: grey;
+		color:white;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-bottom: 2%;
+		padding: 1%;
+			&:hover{
+				color:black;
+				cursor: pointer;
+			}//Closes hover
+	}//closes button
+}// closes top-content
+
+.middle-content{
+	display: flex;
+	flex-direction: row;
+	border: 2px solid red;
+	flex-flow: row;
+	width: 100%;
+		.right-content{
+			margin-left: 30%;
+			h2{
+				font-size: 1.5rem;
+				padding-bottom: 2%;
+			}
+			p{
+				border: 1px solid lightgrey;
+				border-width: thin;
+				padding: 2%;
+			}
+
+		}
+
+		.left-content{
+			width: 50%;
+		}
+	}	
 }
