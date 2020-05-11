@@ -159,6 +159,7 @@ header nav a {
   display: flex;
   flex-flow: column nowrap;
   margin: 5%;
+  padding-right: 3%;
   margin-left: 28%;
   width: 50%;
   height: 100%;
@@ -166,4 +167,18 @@ header nav a {
 }
 .top-content .top-image {
   margin-left: 5%;
+}
+.top-content .head-text {
+  padding-left: 3%;
+}
+.top-content .head-text h1 {
+  font-size: 2rem;
+}
+.top-content .head-text h2 {
+  font-size: 1.5rem;
+}
+.top-content .border-content {
+  border-bottom: 2px solid black;
+  border-width: thin;
+  margin: 5%;
 }
