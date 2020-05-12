@@ -146,6 +146,17 @@ html,
 body {
   height: 100%;
 }
+.border {
+  border: 1px solid grey;
+  color: black;
+}
+.unlock-key {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: auto;
+}
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -207,9 +218,19 @@ header nav a {
 .main-container .box-1 {
   margin-left: 3%;
 }
+@media (max-width: 500px) {
+  .main-container .box-1 {
+    display: flex;
+  }
+}
 .main-container .box-1 h2 {
   font-size: 1.2rem;
   font-weight: bold;
+}
+@media (max-width: 200px) {
+  .main-container .box-1 h2 {
+    margin-bottom: 5%;
+  }
 }
 .main-container .box-1 p {
   font-size: 1.1rem;
@@ -218,6 +239,20 @@ header nav a {
 .main-container .box-2 {
   margin-right: 20%;
   width: 10%;
+}
+@media (max-width: 500px) {
+  .main-container .box-2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 200px) {
+  .main-container .box-2 {
+    display: flex;
+    margin: 3%;
+  }
 }
 .main-container .box-2 h2 {
   font-size: 1.5rem;
@@ -231,7 +266,8 @@ header nav a {
   font-size: 1.1rem;
 }
 .work-container {
-  border: 2px solid gold;
+  margin-top: 2%;
+  margin-bottom: 2%;
   display: flex;
   justify-content: center;
 }
@@ -242,12 +278,15 @@ header nav a {
 }
 .work-container tr {
   border: 1px solid grey;
+  color: black;
 }
 .work-container tr th {
   border: 1px solid grey;
+  color: black;
 }
 .work-container tr td {
   border: 1px solid grey;
+  color: black;
 }
 footer .footer-container {
   display: flex;
